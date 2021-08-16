@@ -1,0 +1,38 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+.links {
+  display: flex;
+  padding: 5em;
+  justify-content: center;
+  gap: 5em;
+  list-style: none;
+}
+
+.link {
+  position: relative;
+  text-decoration: none;
+  color: var(--grey);
+  font-weight: 700;
+  padding-bottom: 1em;
+}
+
+.link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0px;
+  height: 3px;
+  transform: translateX(-50%);
+  background-color: var(--light);
+  transition: 0.3s width ease;
+}
+
+.link:hover::after {
+  width: 100%;
+}

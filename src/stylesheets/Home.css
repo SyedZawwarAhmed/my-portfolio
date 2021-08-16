@@ -1,0 +1,45 @@
+.home {
+  background-color: var(--dark);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.title {
+  color: var(--light);
+  font-size: 6rem;
+  margin-bottom: 0.3em;
+  font-weight: 500;
+}
+
+.role {
+  font-size: 1.8rem;
+  color: var(--dark-grey);
+  margin-bottom: 2.5em;
+}
+
+.resume {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--light);
+  text-decoration: none;
+  padding: 0.8em 2.5em;
+  border: 5px solid var(--light);
+  transition: 0.3s all ease-in-out;
+}
+
+.resume:hover {
+  color: var(--dark);
+  background-color: var(--light);
+}
+
+.watermark {
+  position: absolute;
+  font-size: 20rem;
+  color: hsla(0, 0%, 100%, 0.031);
+  bottom: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
