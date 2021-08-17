@@ -10,3 +10,7 @@
   --grey: hsl(0, 0%, 58%);
   --dark-grey: hsl(0, 0%, 40%);
 }
+
+html {
+  scroll-behavior: smooth;
+}

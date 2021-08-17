@@ -1,0 +1,54 @@
+.about {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    scroll-margin-top: 5rem;
+}
+
+.about-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 5rem;
+}
+
+.about-title {
+    font-size: 5rem;
+    margin-bottom: 0.5em;
+}
+
+.about-para {
+    font-size: 1.1rem;
+    color: var(--dark-grey);
+    max-width: 65ch;
+    line-height: 1.8em;
+}
+
+.skills img {
+    height: 10rem
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--grey);
+    background-color: #39311D;
+}
+
+.skills-title {
+    font-size: 3rem;
+    padding: 0.8em;
+    color: var(--light)
+}
+
+.logos {
+    display: flex;
+    align-items: center;
+    gap: 8rem;
+    padding: 4rem;
+}

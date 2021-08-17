@@ -3,11 +3,12 @@
   top: 0;
   right: 0;
   left: 0;
+  background-color: var(--dark);
 }
 
 .links {
   display: flex;
-  padding: 5em;
+  padding: 3.5em;
   justify-content: center;
   gap: 5em;
   list-style: none;
