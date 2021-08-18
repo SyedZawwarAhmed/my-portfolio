@@ -1,45 +1,161 @@
 .home {
+  position: relative;
   background-color: var(--dark);
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  overflow: hidden;
+}
+
+.home-text {
+  position: relative;
+  height: 100%;
+  padding-left: 5em;
+  z-index: 2;
 }
 
 .title {
+  position: relative;
   color: var(--light);
   font-size: 6rem;
-  margin-bottom: 0.3em;
+  margin-bottom: 0.6em;
   font-weight: 500;
+  /* line-height: 0.6em; */
+  animation: title-animation 0.6s;
+}
+
+.title:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  background-color: black;
+  right: 0;
+  left: 100%;
+  animation: hometext-animation 0.6s ease-in-out;
+  animation-delay: 0.5s;
 }
 
 .role {
   font-size: 1.8rem;
   color: var(--dark-grey);
   margin-bottom: 2.5em;
+  animation: role-animation 1.2s;
+  animation-timing-function: linear;
 }
 
 .resume {
+  display: inline-block;
   font-size: 1.5rem;
   font-weight: 600;
   color: var(--light);
   text-decoration: none;
   padding: 0.8em 2.5em;
+  margin-bottom: 2em;
   border: 5px solid var(--light);
-  transition: 0.3s all ease-in-out;
+  transition: 0.25s all ease-in-out;
+  background-color: transparent;
+  animation: button-animation 1.7s;
+  animation-timing-function: ease-in-out;
 }
 
 .resume:hover {
   color: var(--dark);
+  border: 5px solid var(--accent);
+  background-color: var(--accent);
+}
+
+.sidebar {
+  position: absolute;
+  width: 0.8rem;
+  top: 0;
+  bottom: 0;
+  left: 0;
   background-color: var(--light);
+  animation: sidebar-animation 0.5s ease;
 }
 
 .watermark {
   position: absolute;
   font-size: 20rem;
-  color: hsla(0, 0%, 100%, 0.031);
+  color: hsla(0, 0%, 100%, 0.025);
   bottom: 0;
-  overflow: hidden;
   pointer-events: none;
+  animation: watermark-animation 2.3s;
+  animation-timing-function: ease-out;
+}
+
+@keyframes sidebar-animation {
+ from {
+   height: 0;
+ }
+ to {
+   height: 100%;
+ }
+}
+
+@keyframes title-animation {
+  from {
+    color: transparent;
+  }
+  to {
+    color: transparent;
+  }
+}
+
+ @keyframes hometext-animation {
+   from {
+     left: 0;
+    }
+    to {
+      left: 100%;
+    }
+}
+
+@keyframes role-animation {
+  0% {
+    opacity: 0;
+    margin-top: -4rem;
+  }
+
+  72.73% {
+    opacity: 0;
+    margin-top: -4rem;
+  }
+
+  100% {
+    opacity: 1;
+    margin-top: 0;
+  }
+}
+
+@keyframes button-animation {
+  0% {
+    opacity: 0;
+  }
+
+  73.3% {
+    transform: translateX(80%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes watermark-animation {
+  0% {
+    opacity: 0;
+  }
+
+  90% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
