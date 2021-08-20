@@ -80,7 +80,7 @@
 .watermark {
   position: absolute;
   font-size: 20rem;
-  color: hsla(0, 0%, 100%, 0.025);
+  color: hsla(0, 0%, 100%, 0.008);
   bottom: 0;
   pointer-events: none;
   animation: watermark-animation 2.3s;

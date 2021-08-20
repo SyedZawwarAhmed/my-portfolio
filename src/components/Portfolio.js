@@ -10,11 +10,13 @@ function Portfolio() {
     img={item.image}
     title={item.title}
     description={item.description}
+    siteLink={item.siteLink}
+    codeLink={item.codeLink}
   />)
   return (
     <>
       <div id="portfolio" className="portfolio">
-        <h1 className="portfolio-title">Projects that I've made</h1>
+        <h1 className="portfolio-title">Projects I've made</h1>
         <div className="portfolio-items">
           {portfolioItems}
         </div>

@@ -6,9 +6,11 @@
 
 :root {
   --light: hsl(0, 0%, 100%);
-  --dark: hsl(0, 0%, 0%);
-  --grey: hsl(0, 0%, 58%);
-  --dark-grey: hsl(0, 0%, 40%);
+  --dark: hsl(240, 8%, 5%);
+  --light-grey: hsl(0 0% 96%);
+  --grey: hsl(221, 13%, 62%);
+  --dark-grey: hsl(228, 10%, 31%);
+  --accent: hsl(237, 91%, 91%);
 }
 
 html {

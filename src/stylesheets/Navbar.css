@@ -4,6 +4,8 @@
   right: 0;
   left: 0;
   z-index: 2;
+  background-color: var(--dark);
+  box-shadow: 0 0 3px 7px hsla(0, 0%, 0%, 0.15);
 }
 
 .links {
@@ -19,7 +21,6 @@
   text-decoration: none;
   color: var(--grey);
   font-weight: 700;
-  padding-bottom: 1em;
   animation: navbar-animation 2s;
   animation-timing-function: ease-in-out;
 }
@@ -27,7 +28,7 @@
 .link::after {
   content: "";
   position: absolute;
-  bottom: 0;
+  bottom: -1em;
   left: 50%;
   width: 0px;
   height: 3px;
