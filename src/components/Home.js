@@ -8,7 +8,7 @@ function Home() {
         <div className="home-text">
           <h1 className="title">I am Zawwar Ahmed</h1>
           <p className="role">Front-end Developer</p>
-          <a className="resume">
+          <a href="/#" className="resume">
             View Resume
           </a>
         <div className="sidebar"></div>

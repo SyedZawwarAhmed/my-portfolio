@@ -23,6 +23,7 @@
   font-weight: 500;
   /* line-height: 0.6em; */
   animation: title-animation 0.6s;
+  overflow: hidden;
 }
 
 .title:before {
@@ -62,8 +63,8 @@
 
 .resume:hover {
   color: var(--dark);
-  border: 5px solid var(--accent);
-  background-color: var(--accent);
+  border: 5px solid var(--light);
+  background-color: var(--light);
 }
 
 .sidebar {

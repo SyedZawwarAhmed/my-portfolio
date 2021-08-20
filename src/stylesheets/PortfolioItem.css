@@ -1,0 +1,39 @@
+.portfolio-item {
+  display: flex;
+  gap: 3rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  max-width: 28rem;
+  gap: 1rem;
+}
+
+.project-title {
+  font-size: 1.8rem;
+}
+
+.site-links {
+    margin-top: 1.4em;
+}
+
+.site-links a {
+  display: inline-block;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 0.5em 1.5em;
+  margin-right: 1em;
+  border: 3px solid var(--light);
+}
+
+.view-site {
+    color: var(--dark);
+    background-color: var(--light);
+}
+
+.view-code {
+    color: var(--light);
+}

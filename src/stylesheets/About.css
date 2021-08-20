@@ -36,13 +36,14 @@
   justify-content: center;
   justify-content: center;
   align-items: center;
-  background-color: var(--grey);
-  background-color: var(--accent);
+  background-image: linear-gradient(to bottom, var(--grey), var(--dark-grey), var(--dark));
+  padding: 4rem;
+  padding-bottom: 5rem;
 }
 
 .skills-title {
   font-size: 3rem;
-  padding: 0.8em;
+  margin-bottom: 0.8em;
   color: var(--light);
 }
 
@@ -50,5 +51,4 @@
   display: flex;
   align-items: center;
   gap: 8rem;
-  padding: 4rem;
 }

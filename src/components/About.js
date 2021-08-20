@@ -1,9 +1,9 @@
 import React from "react";
 import "../stylesheets/About.css";
-import htmlLogo from "../assets/images/html-logo.png";
-import cssLogo from "../assets/images/css-logo.png";
-import jsLogo from "../assets/images/javascript-logo.png";
-import reactLogo from "../assets/images/react-logo.png";
+import htmlLogo from "../assets/images/logos/html-logo.png";
+import cssLogo from "../assets/images/logos/css-logo.png";
+import jsLogo from "../assets/images/logos/javascript-logo.png";
+import reactLogo from "../assets/images/logos/react-logo.png";
 
 function About() {
   return (

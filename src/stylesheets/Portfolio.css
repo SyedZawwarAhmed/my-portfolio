@@ -1,0 +1,19 @@
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--grey);
+    background-color: rgb(239, 239, 239);
+}
+
+.portfolio-title {
+    font-size: 4rem;
+    margin: 1em;
+}
+
+.portfolio-items {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
