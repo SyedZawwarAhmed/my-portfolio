@@ -1,7 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=STIX+Two+Text:wght@400;500;600;700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+h1,
+h3,
+p {
+  font-family: "STIX Two Text", serif;
 }
 
 :root {

@@ -5,12 +5,12 @@
   left: 0;
   z-index: 2;
   background-color: var(--dark);
-  box-shadow: 0 0 3px 7px hsla(0, 0%, 0%, 0.15);
+  box-shadow: 0 0 3px 7px var(--dark);
 }
 
 .links {
   display: flex;
-  padding: 3.5em;
+  padding: 2.5em;
   justify-content: center;
   gap: 5em;
   list-style: none;

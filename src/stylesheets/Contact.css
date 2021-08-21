@@ -1,0 +1,73 @@
+.contact {
+  scroll-margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #090A0A;
+  padding-block: 7rem;
+}
+
+.contact-title {
+  font-size: 4rem;
+  color: var(--light-grey);
+  margin-bottom: 0.5em;
+}
+
+form {
+  width: min(100%, 40rem);
+}
+
+.input-fields {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 0.3rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--dark-grey);
+}
+
+input,
+textarea {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  padding-block: 0.6em;
+  border: none;
+  outline: none;
+  color: var(--grey);
+  background-color: #090A0A;
+  box-shadow: 0 0 3px 4px hsla(0, 0%, 0%, 0.025);
+  border-bottom: 3px solid var(--dark-grey);
+  resize: none;
+  transition: 0.3s ease;
+}
+
+input:hover,
+textarea:hover,
+input:focus,
+textarea:focus {
+  border-bottom: 3px solid var(--grey);
+}
+
+.btn-submit {
+  display: block;
+  font-size: 1.3rem;
+  font-weight: 600;
+  padding: 0.5em 1.7em;
+  margin-top: 1em;
+  margin-left: auto;
+  color: var(--dark);
+  background-color: var(--grey);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.btn-submit:hover {
+  background-color: var(--dark-grey);
+}
+
