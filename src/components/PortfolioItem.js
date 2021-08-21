@@ -11,7 +11,7 @@ function PortfolioItem(props) {
         <h1 className="project-title">{props.title}</h1>
         <p className="project-description">{props.description}</p>
         <div className="site-links">
-          <a href={props.siteLink} className="view-site" target="_blank">
+          <a href={props.siteLink} className="view-site" target="_blank" rel="noreferrer">
             View Site
           </a>
           <a href={props.codeLink} className="view-code" target="_blank">

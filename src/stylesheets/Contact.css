@@ -25,6 +25,7 @@ form {
 
 label {
   margin-bottom: 0.3rem;
+  margin-left: 0.5rem;
   font-size: 1.2rem;
   font-weight: 500;
   color: var(--dark-grey);
@@ -33,20 +34,23 @@ label {
 input,
 textarea {
   font-size: 1.1rem;
-  margin-bottom: 1rem;
-  padding-block: 0.6em;
+  margin-bottom: 1.3rem;
+  padding: 0.6rem;
   border: none;
   outline: none;
   color: var(--grey);
-  background-color: #090A0A;
+  background-color: #1c1f1f;
   box-shadow: 0 0 3px 4px hsla(0, 0%, 0%, 0.025);
-  border-bottom: 3px solid var(--dark-grey);
+  border-bottom: 3px solid #1c1f1f;
   resize: none;
   transition: 0.3s ease;
 }
 
 input:hover,
-textarea:hover,
+textarea:hover {
+  border-bottom: 3px solid var(--dark-grey);
+}
+
 input:focus,
 textarea:focus {
   border-bottom: 3px solid var(--grey);
@@ -54,6 +58,7 @@ textarea:focus {
 
 .btn-submit {
   display: block;
+  width: 100%;
   font-size: 1.3rem;
   font-weight: 600;
   padding: 0.5em 1.7em;
