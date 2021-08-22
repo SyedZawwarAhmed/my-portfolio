@@ -6,6 +6,7 @@
   background-color: var(--light-grey);
   scroll-margin-top: 5rem;
   padding-block: 5rem;
+  overflow: hidden;
 }
 
 .portfolio-title {

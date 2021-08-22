@@ -12,8 +12,21 @@
 }
 
 .img-container {
-  /* border: 3px solid var(--dark-grey); */
   box-shadow: 0 0 3px 4px hsla(0, 0%, 0%, 0.157);
+  opacity: 0;
+  transform: translateX(-50%);
+  transition: 0.4s all ease;
+}
+
+.text-container {
+  opacity: 0;
+  transform: translateX(50%);
+  transition: 0.4s all ease;
+}
+
+.container-animation {
+  transform: translateX(0);
+  opacity: 1;
 }
 
 .project-img {
