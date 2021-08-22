@@ -1,3 +1,27 @@
-i {
+.footer, .footer ul {
+    display: flex;
+}
+
+.footer {
+    background-color: var(--light-grey);
+    justify-content: space-between;
+    align-items: center;
+    padding: 5em;
+}
+
+.nav-links {
+    gap: 3rem;
+}
+
+.social-links {
+    gap: 2rem
+}
+
+.nav-links a, i {
     color: var(--dark);
+    font-weight: 500;
+}
+
+.copyright {
+    font-size: 1.2rem;
 }
