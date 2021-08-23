@@ -1,14 +1,14 @@
-import React, { useState, useEffect, useRef } from "react";
+import React from "react";
 import PortfolioItem from "./PortfolioItem";
 import { PROJECTINFORMATION } from "./ProjectInformation";
 import "../stylesheets/Portfolio.css";
 
 function Portfolio() {
-  
   const projectInformation = PROJECTINFORMATION;
 
   const portfolioItems = projectInformation.map((item) => (
     <PortfolioItem
+      key={item.id}
       img={item.image}
       title={item.title}
       description={item.description}

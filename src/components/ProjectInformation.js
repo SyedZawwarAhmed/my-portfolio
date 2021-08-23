@@ -5,6 +5,7 @@ import countries from "../assets/images/screenshots/Countries.png";
 
 export const PROJECTINFORMATION = [
   {
+    id: 0,
     image: coffee,
     title: "Coffeeroasters Subscription Site",
     description:
@@ -14,6 +15,7 @@ export const PROJECTINFORMATION = [
       codeLink: 'https://github.com/SyedZawwarAhmed/coffeeroasters-subscription-site'
   },
   {
+    id:1,
     image: countries,
     title: "Rest Countries API",
     description:
@@ -22,6 +24,7 @@ export const PROJECTINFORMATION = [
     codeLink: 'https://github.com/SyedZawwarAhmed/Rest-Countries-API'
   },
   {
+    id: 2,
     image: bank,
     title: "Easybank Landing Page",
     description:
@@ -30,6 +33,7 @@ export const PROJECTINFORMATION = [
     codeLink: 'https://github.com/SyedZawwarAhmed/easybank-landing-page'
   },
   {
+    id: 3,
     image: pricing,
     title: "Interactive Pricing Component",
     description:

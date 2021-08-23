@@ -6,8 +6,8 @@ function Footer() {
     <>
       <div id="footer" className="footer">
           <ul className="social-links">
-              <li><a href="https://github.com/SyedZawwarAhmed" target="_blank"><i className="fa fa-github fa-2x"></i></a></li>
-              <li><a href="https://www.linkedin.com/in/syed-zawwar-ahmed-b7345a1b8/" target="_blank"><i className="fa fa-linkedin  fa-2x"></i></a></li>
+              <li><a href="https://github.com/SyedZawwarAhmed" target="_blank" rel="noreferrer"><i className="fa fa-github fa-2x"></i></a></li>
+              <li><a href="https://www.linkedin.com/in/syed-zawwar-ahmed-b7345a1b8/" target="_blank" rel="noreferrer"><i className="fa fa-linkedin  fa-2x"></i></a></li>
               <li><a href="mailto:zawwar.ahmed12@gmail.com"><i className="fa fa-envelope  fa-2x"></i></a></li>
           </ul>
           <ul className="nav-links">
