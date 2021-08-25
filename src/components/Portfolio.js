@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React from "react";
 import PortfolioItem from "./PortfolioItem";
 import { PROJECTINFORMATION } from "./ProjectInformation";
 import "../stylesheets/Portfolio.css";
