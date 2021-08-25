@@ -35,25 +35,32 @@ function Contact() {
         >
           Leave a message
         </h1>
-        <form action="submit">
-          {/* <div className="input-fields"> */}
+        <form
+          action="https://formsubmit.co/zawwar.ahmed12@gmail.com"
+          method="POST"
+        >
           <div className="name input-field">
             <label htmlFor="name">Name</label>
-            <input type="text" />
+            <input type="text" name="name" />
           </div>
           <div className="email input-field">
             <label htmlFor="Email">Email</label>
-            <input type="email" />
+            <input type="email" name="email" />
           </div>
           <div className="subject input-field">
             <label htmlFor="Subject">Subject</label>
-            <input type="text" />
+            <input type="text" name="subject" />
           </div>
           <div className="message input-field">
             <label htmlFor="message">Your Message</label>
             <textarea name="message" id="message" rows="5"></textarea>
           </div>
-          {/* </div> */}
+          <input
+            type="hidden"
+            name="_next"
+            value="http://localhost:3000/thanks.html"
+          />
+          <input type="hidden" name="_captcha" value="false" />
           <button id="btn-submit" className="btn btn-submit" type="submit">
             Send
           </button>
