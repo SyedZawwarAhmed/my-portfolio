@@ -1,17 +1,22 @@
 import React from "react";
+import { useInView } from 'react-intersection-observer';
 import "../stylesheets/About.css";
-import htmlLogo from "../assets/images/logos/html-logo.png";
-import cssLogo from "../assets/images/logos/css-logo.png";
-import jsLogo from "../assets/images/logos/javascript-logo.png";
-import reactLogo from "../assets/images/logos/react-logo.png";
+import Skills from "./Skills";
 
 function About() {
+  const { ref, inView } = useInView({
+    root: null,
+    rootMargin: "-200px 0px",
+    threshold: 0,
+    triggerOnce: true
+  });
+
   return (
     <>
       <div id="about" className="about">
-        <div className="about-text">
-          <h1 className="about-title">About me</h1>
-          <p className="about-para">
+        <div ref={ref} className="about-text">
+          <h1 className={inView ? "about-title title-animation" : "about-title"}>About me</h1>
+          <p className={inView ? "about-para para-animation" : "about-para"}>
             I am a front-end web developer having skills in HTML, CSS,
             JavaScript, and React. I am currently a student of Computer Science
             and I aim to become a Full-Stack web developer. I am very
@@ -21,16 +26,7 @@ function About() {
             including a lot of logic.
           </p>
         </div>
-
-        <div className="skills">
-          <h1 className="skills-title">My skills</h1>
-          <div className="logos">
-            <img src={htmlLogo} alt="" className="skill-logo" />
-            <img src={cssLogo} alt="" className="skill-logo" />
-            <img src={jsLogo} alt="" className="skill-logo" />
-            <img src={reactLogo} alt="" className="skill-logo" />
-          </div>
-        </div>
+        <Skills />
       </div>
     </>
   );

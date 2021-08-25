@@ -1,42 +1,19 @@
-import React, { useState, useEffect, useRef } from "react";
+import React from "react";
 import "../stylesheets/PortfolioItem.css";
+import { useInView } from "react-intersection-observer";
 
 function PortfolioItem(props) {
-  const containerRef = useRef(null);
-  const [isVisible, setIsVisible] = useState(false);
-
-  // const options = {
-  //   root: null,
-  //   rootMargin: "-120px 0px",
-  //   threshold: 0,
-  // };
-
-  useEffect(() => {
-    const target = containerRef.current;
-    const observer = new IntersectionObserver(
-      (entries) => {
-        const [entry] = entries;
-        setIsVisible(entry.isIntersecting);
-      },
-      {
-        root: null,
-        rootMargin: "-120px 0px",
-        threshold: 0,
-      }
-    );
-    if (target) {
-      observer.observe(target);
-    }
-    return () => {
-      if (target) observer.unobserve(target);
-    };
-  }, [containerRef]);
-
+  const { ref, inView } = useInView({
+    root: null,
+    rootMargin: "-200px 0px",
+    threshold: 0,
+    triggerOnce: true
+  });
   return (
-    <div ref={containerRef} className="portfolio-item">
+    <div ref={ref} className="portfolio-item">
       <div
         className={
-          isVisible
+          inView
             ? "container-animation container img-container"
             : "container img-container"
         }
@@ -45,7 +22,7 @@ function PortfolioItem(props) {
       </div>
       <div
         className={
-          isVisible
+          inView
             ? "container-animation container text-container"
             : "container text-container"
         }

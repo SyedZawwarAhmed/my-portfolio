@@ -1,17 +1,26 @@
 .portfolio {
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: var(--light-grey);
-  scroll-margin-top: 5rem;
   padding-block: 5rem;
+  scroll-margin-top: 5rem;
   overflow: hidden;
 }
 
 .portfolio-title {
   font-size: 4rem;
+  margin-top: -1rem;
+  opacity: 0;
   margin-bottom: 1em;
+  transition: 0.3s all ease;
+}
+
+.portfolio-title-animation {
+  margin-top: 0;
+  opacity: 1;
 }
 
 .portfolio-items {

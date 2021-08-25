@@ -1,0 +1,48 @@
+.skills img {
+  height: 8rem;
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(
+    to bottom,
+    var(--grey),
+    var(--dark-grey),
+    var(--dark)
+  );
+  padding: 4rem;
+  padding-bottom: 5rem;
+}
+
+.skills-title {
+  font-size: 3rem;
+  margin-bottom: 0.8em;
+  color: var(--light);
+  margin-top: -1rem;
+  opacity: 0;
+  transition: 0.6s ease all;
+}
+
+.skills-title-animation {
+  margin-top: 0;
+  opacity: 1;
+}
+
+.logos {
+  display: flex;
+  align-items: center;
+  gap: 8rem;
+}
+
+.skill-logo {
+  opacity: 0;
+  transition: 0.6s all linear;
+}
+
+.logo-animation {
+  opacity: 1;
+}
