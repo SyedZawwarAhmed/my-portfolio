@@ -8,7 +8,7 @@ function Contact() {
   const { ref, inView } = useInView({
     root: null,
     rootMargin: "-200px 0px",
-    threshold: 0,
+    threshold: 0.4,
     triggerOnce: true,
   });
   if (inView) {

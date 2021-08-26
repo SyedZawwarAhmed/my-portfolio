@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React from "react";
 import { useInView } from "react-intersection-observer";
 import htmlLogo from "../assets/images/logos/html-logo.png";
 import cssLogo from "../assets/images/logos/css-logo.png";
@@ -8,7 +8,6 @@ import "../stylesheets/Skills.css";
 
 function Skills() {
   const images = document.getElementsByClassName("skill-logo");
-  const imageRef = useRef(null);
   const { ref, inView } = useInView({
     root: null,
     rootMargin: "-200px 0px",
@@ -35,10 +34,10 @@ function Skills() {
         My skills
       </h1>
       <div className="logos">
-        <img ref={imageRef} src={htmlLogo} alt="" className="skill-logo" />
-        <img ref={imageRef} src={cssLogo} alt="" className="skill-logo" />
-        <img ref={imageRef} src={jsLogo} alt="" className="skill-logo" />
-        <img ref={imageRef} src={reactLogo} alt="" className="skill-logo" />
+        <img src={htmlLogo} alt="" className="skill-logo" />
+        <img src={cssLogo} alt="" className="skill-logo" />
+        <img src={jsLogo} alt="" className="skill-logo" />
+        <img src={reactLogo} alt="" className="skill-logo" />
       </div>
     </div>
   );

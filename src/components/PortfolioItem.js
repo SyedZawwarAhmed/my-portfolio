@@ -7,7 +7,7 @@ function PortfolioItem(props) {
     root: null,
     rootMargin: "-200px 0px",
     threshold: 0,
-    triggerOnce: true
+    triggerOnce: true,
   });
   return (
     <div ref={ref} className="portfolio-item">

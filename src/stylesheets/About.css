@@ -1,11 +1,12 @@
 .about {
   display: flex;
   flex-direction: column;
-  scroll-margin-top: 5rem;
-  background-color: var(--light);
+  scroll-margin-top: 6rem;
+  background-color: var(--dark);
 }
 
 .about-text {
+  color: var(--light);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -29,7 +30,7 @@
 
 .about-para {
   font-size: 1.1rem;
-  color: var(--dark-grey);
+  color: var(--grey);
   max-width: 65ch;
   line-height: 1.8em;
   opacity: 0;

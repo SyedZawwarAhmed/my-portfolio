@@ -35,11 +35,11 @@
 
 .project-title {
   font-size: 1.8rem;
-  color: var(--dark);
+  color: var(--light);
 }
 
 .project-description {
-  color: var(--dark-grey);
+  color: var(--grey);
   font-weight: 500;
 }
 
@@ -54,7 +54,7 @@
   text-decoration: none;
   padding: 0.5em 1.5em;
   margin-right: 1em;
-  border: 3px solid var(--dark-grey);
+  border: 3px solid var(--light-grey);
   transition: 0.2s box-shadow ease;
   
 }
@@ -64,10 +64,10 @@
 }
 
 .view-site {
-  color: var(--light-grey);
-  background-color: var(--dark-grey);
+  color: var(--dark);
+  background-color: var(--light-grey);
 }
 
 .view-code {
-  color: var(--dark-grey);
+  color: var(--light-grey);
 }

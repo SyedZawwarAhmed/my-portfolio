@@ -8,12 +8,13 @@
   justify-content: center;
   justify-content: center;
   align-items: center;
-  background-image: linear-gradient(
+  /* background-image: linear-gradient(
     to bottom,
     var(--grey),
     var(--dark-grey),
     var(--dark)
-  );
+  ); */
+  background: var(--dark);
   padding: 4rem;
   padding-bottom: 5rem;
 }
