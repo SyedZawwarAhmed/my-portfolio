@@ -11,18 +11,21 @@ function Skills() {
   const { ref, inView } = useInView({
     root: null,
     rootMargin: "-200px 0px",
-    threshold: 0.5,
+    threshold: 0.2,
     triggerOnce: true,
   });
-  if (inView) {
-      let i = 0;
+  const animation = () => {
+    let i = 0;
     let interval = setInterval(() => {
-        images[i].classList.add("logo-animation");
-        i++;
-        if (i === images.length) {
-            clearInterval(interval);
-        }
+      images[i].classList.add("logo-animation");
+      i++;
+      if (i === images.length) {
+        clearInterval(interval);
+      }
     }, 250);
+  };
+  if (inView) {
+    animation();
   }
   return (
     <div ref={ref} className="skills">

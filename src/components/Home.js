@@ -11,9 +11,15 @@ function Home() {
           <a href="/#" className="resume">
             View Resume
           </a>
-        <div className="sidebar"></div>
+          <div className="sidebar"></div>
         </div>
         <h1 className="watermark">web developer</h1>
+        <div className="additional-scroll">
+          <span>portfolio</span>
+          <a href="#portfolio" className="scroll">
+            <div className="ball"></div>
+          </a>
+        </div>
       </div>
     </>
   );

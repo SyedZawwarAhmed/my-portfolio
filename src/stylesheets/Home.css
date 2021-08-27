@@ -1,11 +1,10 @@
 .home {
   position: relative;
   background-color: var(--dark);
-  min-height: 90vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
+  min-height: 100vh;
 }
 
 .home-text {
@@ -22,7 +21,8 @@
   margin-bottom: 0.6em;
   font-weight: 500;
   /* line-height: 0.6em; */
-  animation: title-animation 0.6s;
+  /* animation: title-animation 0.6s; */
+  animation-fill-mode: backwards;
   overflow: hidden;
 }
 
@@ -36,14 +36,17 @@
   left: 100%;
   animation: hometext-animation 0.6s ease-in-out;
   animation-delay: 0.5s;
+  animation-fill-mode: backwards;
 }
 
 .role {
   font-size: 1.8rem;
-  color: var(--dark-grey);
+  color: var(--grey);
   margin-bottom: 2.5em;
-  animation: role-animation 1.2s;
-  animation-timing-function: linear;
+  animation: role-animation 0.5s;
+  animation-delay: 1.1s;
+  animation-timing-function: ease;
+  animation-fill-mode: backwards;
 }
 
 .resume {
@@ -57,8 +60,10 @@
   border: 5px solid var(--light-grey);
   transition: 0.25s all ease-in-out;
   background-color: transparent;
-  animation: button-animation 1.7s;
-  animation-timing-function: ease-in-out;
+  animation: button-animation 0.4s;
+  animation-delay: 1.6s;
+  animation-timing-function: ease;
+  animation-fill-mode: backwards;
 }
 
 .resume:hover {
@@ -75,6 +80,7 @@
   left: 0;
   background-color: var(--light);
   animation: sidebar-animation 0.5s ease;
+  animation-fill-mode: backwards;
 }
 
 .watermark {
@@ -83,8 +89,81 @@
   color: hsla(0, 0%, 100%, 0.008);
   bottom: 0;
   pointer-events: none;
-  animation: watermark-animation 2.3s;
+  animation: appearing-animation 0.3s;
+  animation-delay: 2.1s;
   animation-timing-function: ease-out;
+  animation-fill-mode: backwards;
+}
+
+.additional-scroll {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.additional-scroll span {
+  display: block;
+  padding: 1em;
+  text-align: right;
+  color: var(--grey);
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  margin-right: -0.5rem;
+  animation: appearing-animation 0.6s ease 1.9s 1 normal backwards;
+}
+
+.scroll {
+  display: flex;
+  width: 1.5rem;
+  height: 3rem;
+  margin: 0 auto;
+  border-radius: 1.5rem;
+  border: 4px solid var(--light-grey);
+  animation: scroll-btn-animation 0.6s ease 2.1s;
+  animation-fill-mode: backwards;
+}
+
+.ball {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  background-color: var(--light-grey);
+  margin: 2px;
+  align-self: flex-start;
+  opacity: 0;
+  animation: ball-animation 1.4s ease infinite;
+  animation-delay: 2.2s;
+  animation-fill-mode: forwards;
+}
+
+
+@keyframes scroll-btn-animation {
+  from {
+    opacity: 0;
+    height: 0;
+  }
+
+  to {
+    opacity: 1;
+    height: 3rem; 
+  }
+}
+
+@keyframes ball-animation {
+  0% {
+    margin-top: 2px;
+    opacity: 1;
+  }
+  75% {
+    margin-top: 170%;
+  }
+
+  100% {
+    margin-top: 2px;
+    opacity: 1;
+  }
 }
 
 @keyframes sidebar-animation {
@@ -95,7 +174,7 @@
    height: 100%;
  }
 }
-
+/* 
 @keyframes title-animation {
   from {
     color: transparent;
@@ -103,7 +182,7 @@
   to {
     color: transparent;
   }
-}
+} */
 
  @keyframes hometext-animation {
    from {
@@ -120,11 +199,6 @@
     margin-top: -4rem;
   }
 
-  72.73% {
-    opacity: 0;
-    margin-top: -4rem;
-  }
-
   100% {
     opacity: 1;
     margin-top: 0;
@@ -132,11 +206,7 @@
 }
 
 @keyframes button-animation {
-  0% {
-    opacity: 0;
-  }
-
-  73.3% {
+ 0% {
     transform: translateX(80%);
     opacity: 0;
   }
@@ -147,12 +217,8 @@
   }
 }
 
-@keyframes watermark-animation {
+@keyframes appearing-animation {
   0% {
-    opacity: 0;
-  }
-
-  90% {
     opacity: 0;
   }
 
