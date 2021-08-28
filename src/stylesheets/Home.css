@@ -5,23 +5,24 @@
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 .home-text {
+  font-size: calc(2vw);
   position: relative;
   height: 100%;
-  padding-left: 5em;
+  padding-left: 4em;
+  padding-right: 1em;
   z-index: 2;
 }
 
 .title {
   position: relative;
   color: var(--light);
-  font-size: 6rem;
-  margin-bottom: 0.6em;
+  font-size: clamp(3.5rem, calc(8vw), 7rem);
   font-weight: 500;
-  /* line-height: 0.6em; */
-  /* animation: title-animation 0.6s; */
+  margin-bottom: 0.6em;
   animation-fill-mode: backwards;
   overflow: hidden;
 }
@@ -40,7 +41,7 @@
 }
 
 .role {
-  font-size: 1.8rem;
+  font-size: clamp(1.4rem, calc(3vw), 2rem);
   color: var(--grey);
   margin-bottom: 2.5em;
   animation: role-animation 0.5s;
@@ -51,13 +52,13 @@
 
 .resume {
   display: inline-block;
-  font-size: 1.5rem;
+  font-size: clamp(1.1rem, calc(2vw), 1.5rem);
   font-weight: 600;
   color: var(--light-grey);
   text-decoration: none;
-  padding: 0.8em 2.5em;
-  margin-bottom: 2em;
-  border: 5px solid var(--light-grey);
+  padding: 0.8em 1.6em;
+  /* margin-bottom: 2em; */
+  border: 3px solid var(--light-grey);
   transition: 0.25s all ease-in-out;
   background-color: transparent;
   animation: button-animation 0.4s;
@@ -68,13 +69,12 @@
 
 .resume:hover {
   color: var(--dark);
-  border: 5px solid var(--light-grey);
   background-color: var(--light-grey);
 }
 
 .sidebar {
   position: absolute;
-  width: 0.8rem;
+  width: 0.6em;
   top: 0;
   bottom: 0;
   left: 0;
@@ -119,7 +119,7 @@
   height: 3rem;
   margin: 0 auto;
   border-radius: 1.5rem;
-  border: 4px solid var(--light-grey);
+  border: 2px solid var(--light-grey);
   animation: scroll-btn-animation 0.6s ease 2.1s;
   animation-fill-mode: backwards;
 }
@@ -157,7 +157,7 @@
     opacity: 1;
   }
   75% {
-    margin-top: 170%;
+    margin-top: 140%;
   }
 
   100% {
@@ -174,15 +174,6 @@
    height: 100%;
  }
 }
-/* 
-@keyframes title-animation {
-  from {
-    color: transparent;
-  }
-  to {
-    color: transparent;
-  }
-} */
 
  @keyframes hometext-animation {
    from {

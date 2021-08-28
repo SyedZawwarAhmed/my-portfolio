@@ -7,7 +7,7 @@ function Contact() {
   const submitBtn = document.getElementById("btn-submit");
   const { ref, inView } = useInView({
     root: null,
-    rootMargin: "-200px 0px",
+    rootMargin: "0px 0px",
     threshold: 0.4,
     triggerOnce: true,
   });

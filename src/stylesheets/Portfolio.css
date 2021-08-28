@@ -1,5 +1,5 @@
 .portfolio {
-  scroll-margin-top: 6rem;
+  scroll-margin-top: 3rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -10,15 +10,14 @@
 
 .portfolio-title {
   color: var(--light);
-  font-size: 5rem;
-  margin-top: -1rem;
+  font-size: clamp(3rem, calc(7vw), 6rem);
+  text-align: center;
   opacity: 0;
   margin-bottom: 1em;
   transition: 0.3s all ease;
 }
 
 .portfolio-title-animation {
-  margin-top: 0;
   opacity: 1;
 }
 

@@ -1,15 +1,24 @@
 .navbar {
   position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   top: 0;
   right: 0;
   left: 0;
-  z-index: 3;
+  padding: 3em clamp(3.5rem, calc(8vw), 7rem);
   background-color: var(--dark);
+  z-index: 3;
+}
+
+.nav-logo {
+  color: var(--light);
+  font-weight: 600;
+  font-size: 1.2rem;
 }
 
 .links {
   display: flex;
-  padding: 2.5em;
   justify-content: center;
   gap: 5em;
   list-style: none;
@@ -21,7 +30,7 @@
   color: var(--grey);
   font-weight: 700;
   animation: navbar-animation 0.3s;
-  animation-delay: 2s;
+  animation-delay: 1s;
   animation-timing-function: ease;
   animation-fill-mode: backwards;
 }
@@ -49,5 +58,32 @@
 
   100% {
     opacity: 1;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .links {
+    gap: 3em;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .links {
+    gap: 2em;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .links {
+    gap: 1em;
+  }
+  .navbar {
+    padding: 3em 10%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .links {
+    display: none;
   }
 }

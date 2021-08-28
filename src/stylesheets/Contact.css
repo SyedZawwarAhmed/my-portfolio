@@ -9,16 +9,15 @@
 }
 
 .contact-title {
-  font-size: 4rem;
+  font-size: clamp(3rem, calc(7vw), 6rem);
+  text-align: center;
   color: var(--light-grey);
-  margin-bottom: 0.5em;
-  margin-top: -3rem;
+  margin: 0 1em 0.5em;
   opacity: 0;
   transition: 0.3s all ease;
 }
 
 .contact-title-animation {
-  margin-top: 0;
   opacity: 1;
 }
 
@@ -28,6 +27,7 @@ form {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 1em;
 }
 
 form > * {

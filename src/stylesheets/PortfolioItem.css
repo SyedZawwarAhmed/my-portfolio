@@ -6,9 +6,11 @@
 .container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-self: center;
   max-width: 28rem;
   gap: 1rem;
+  margin: 1em;
 }
 
 .img-container {
@@ -30,6 +32,7 @@
 }
 
 .project-img {
+  width: 100%;
   aspect-ratio: 16/9;
 }
 
@@ -44,16 +47,17 @@
 }
 
 .site-links {
+  display: flex;
+  gap: 1rem;
   margin-top: 1.4em;
 }
 
 .site-links a {
-  display: inline-block;
+  display: block;
   font-size: 1.2rem;
   font-weight: 600;
   text-decoration: none;
-  padding: 0.5em 1.5em;
-  margin-right: 1em;
+  padding: 0.4em 1.4em;
   border: 3px solid var(--light-grey);
   transition: 0.2s box-shadow ease;
   
@@ -70,4 +74,13 @@
 
 .view-code {
   color: var(--light-grey);
+}
+
+
+@media screen and (max-width: 868px) {
+  .portfolio-item, .site-links {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+  }
 }

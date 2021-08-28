@@ -5,7 +5,7 @@ import { useInView } from "react-intersection-observer";
 function PortfolioItem(props) {
   const { ref, inView } = useInView({
     root: null,
-    rootMargin: "-200px 0px",
+    rootMargin: "0px 0px",
     threshold: 0,
     triggerOnce: true,
   });

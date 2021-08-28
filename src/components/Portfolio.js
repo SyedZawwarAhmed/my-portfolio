@@ -25,8 +25,8 @@ function Portfolio() {
   ));
   return (
     <>
-      <div ref={ref} id="portfolio" className="portfolio">
-        <h1
+      <div id="portfolio" className="portfolio">
+        <h1  ref={ref}
           className={
             inView
               ? "portfolio-title portfolio-title-animation"

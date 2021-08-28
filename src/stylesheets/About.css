@@ -1,7 +1,7 @@
 .about {
+  scroll-margin-top: 3rem;
   display: flex;
   flex-direction: column;
-  scroll-margin-top: 6rem;
   background-color: var(--dark);
 }
 
@@ -12,19 +12,17 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 5rem;
+  padding: 5em 1em;
 }
 
 .about-title {
-  font-size: 5rem;
+  font-size: clamp(3rem, calc(7vw), 6rem);
   margin-bottom: 0.5em;
-  margin-top: -1rem;
   opacity: 0;
   transition: 0.6s all ease;
 }
 
 .title-animation {
-  margin-top: 0;
   opacity: 1;
 }
 

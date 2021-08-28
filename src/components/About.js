@@ -1,7 +1,6 @@
 import React from "react";
 import { useInView } from 'react-intersection-observer';
 import "../stylesheets/About.css";
-import Skills from "./Skills";
 
 function About() {
   const { ref, inView } = useInView({
@@ -26,7 +25,6 @@ function About() {
             including a lot of logic.
           </p>
         </div>
-        <Skills />
       </div>
     </>
   );
