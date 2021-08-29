@@ -25,16 +25,25 @@
   opacity: 1;
 }
 
+.logo-container {
+  text-align: center;
+  
+  opacity: 0;
+  transition: 0.6s all linear;
+}
+
+.logo-container span {
+  display: block;
+  color: var(--light);
+  font-size: 1.2rem;
+  margin-top: 1em;
+}
+
 .logos {
   display: grid;
   place-items: center;
   grid-template-columns: repeat(4, 1fr);
   gap: 5rem;
-}
-
-.skill-logo {
-  opacity: 0;
-  transition: 0.6s all linear;
 }
 
 .logo-animation {

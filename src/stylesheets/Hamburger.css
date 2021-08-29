@@ -64,6 +64,7 @@
 .open .menu {
   margin-left: 30%;
   box-shadow: 0 0 3px 4px hsla(0, 0%, 26%, 0.376);
+  touch-action: none;
 }
 
 .hamburger-links {
@@ -98,8 +99,9 @@
 }
 
 .open .mask {
-  pointer-events: all;
   opacity: 0.6;
+  pointer-events: all;
+  touch-action: none;
 }
 
 @media screen and (max-width: 600px) {
