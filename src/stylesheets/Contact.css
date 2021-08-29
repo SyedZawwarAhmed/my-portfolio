@@ -12,7 +12,7 @@
   font-size: clamp(3rem, calc(7vw), 6rem);
   text-align: center;
   color: var(--light-grey);
-  margin: 0 1em 0.5em;
+  margin-bottom: 0.5em;
   opacity: 0;
   transition: 0.3s all ease;
 }
