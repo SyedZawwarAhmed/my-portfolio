@@ -27,6 +27,10 @@ html {
 
 body {
   background-color: var(--dark);
+}
+
+.App {
+  
   overflow-x: hidden;
 }
 

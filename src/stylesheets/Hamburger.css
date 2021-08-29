@@ -1,13 +1,29 @@
-.hamburger {
+.hamburger-menu {
   display: none;
+}
+
+.hamburger {
+  position: relative;
+  display: none;
+  padding-block: 1rem;
+  z-index: 1;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.bar {
   position: relative;
   width: 1.5rem;
   height: 2px;
-  background-color: var(--dark);
-  z-index: 4;
+  background-color: var(--light);
+  transition: 0.3s background-color ease;
 }
 
-.hamburger::before {
+.open .bar {
+  background-color: var(--dark);
+}
+
+.bar::before {
   content: "";
   position: absolute;
   top: 0;
@@ -18,7 +34,7 @@
   margin-top: 0.5rem;
 }
 
-.hamburger::after {
+.bar::after {
   content: "";
   position: absolute;
   top: 0;
@@ -30,20 +46,60 @@
 }
 
 .menu {
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left:0;
-    background-color: var(--light);
-    margin-left: 30%;
+  position: fixed;
+  display: flex;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin-left: 100%;
+  background-color: var(--light);
+  transition: 0.4s margin-left ease;
 }
 
-.hamburger-links a {
-    color: var(--dark);
+.open .menu {
+  margin-left: 30%;
+  box-shadow: 0 0 3px 4px hsla(0, 0%, 26%, 0.376);
+}
+
+.hamburger-links {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 8rem 0;
+}
+
+.hamburger-link {
+  display: block;
+  color: var(--dark);
+  font-size: 1.1rem;
+  letter-spacing: 0.4em;
+  padding: 1em 2em;
+  transition: 0.3s all ease;
+}
+
+.hamburger-link:hover,
+.hamburger-link:active {
+  background-color: var(--light-grey);
+}
+
+.mask {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0);
+  z-index: 0;
+  opacity: 0;
+  transition: 0.3s all ease;
+  pointer-events: none;
+}
+
+.open .mask {
+  pointer-events: all;
+  opacity: 0.6;
 }
 
 @media screen and (max-width: 600px) {
+  .hamburger-menu,
   .hamburger {
     display: block;
   }
