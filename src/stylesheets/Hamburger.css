@@ -1,5 +1,9 @@
 .hamburger-menu {
   display: none;
+  animation: navbar-animation 0.6s;
+  animation-delay: 1s;
+  animation-timing-function: ease;
+  animation-fill-mode: backwards;
 }
 
 .hamburger {

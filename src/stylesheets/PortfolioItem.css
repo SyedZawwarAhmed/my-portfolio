@@ -83,4 +83,8 @@
     text-align: center;
     justify-content: center;
   }
+
+  .img-container, .text-container {
+    transform: translateX(0);
+  }
 }

@@ -6,7 +6,7 @@ function PortfolioItem(props) {
   const { ref, inView } = useInView({
     root: null,
     rootMargin: "0px 0px",
-    threshold: 0,
+    threshold: 0.7,
     triggerOnce: true,
   });
   return (
