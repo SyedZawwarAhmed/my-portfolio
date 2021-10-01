@@ -1,5 +1,5 @@
 import coffee from "../assets/images/screenshots/Coffee.png";
-import jobListings from "../assets/images/screenshots/JobListings.png";
+import jobListings from "../assets/images/screenshots/JobListings.jpg";
 import bank from "../assets/images/screenshots/Easybank.png";
 import pricing from "../assets/images/screenshots/Pricing.png";
 import countries from "../assets/images/screenshots/Countries.png";
