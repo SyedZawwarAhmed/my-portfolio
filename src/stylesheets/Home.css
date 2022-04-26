@@ -93,6 +93,7 @@
   animation-delay: 2.1s;
   animation-timing-function: ease-out;
   animation-fill-mode: backwards;
+  user-select: none;
 }
 
 .additional-scroll {
