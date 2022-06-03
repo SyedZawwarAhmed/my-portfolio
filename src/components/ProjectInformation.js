@@ -12,7 +12,7 @@ export const PROJECTINFORMATION = [
     description:
       "This is a multipage coffee subscription site made using HTML, CSS and Vanilla JavaScript.",
     siteLink:
-      "https://syedzawwarahmed.github.io/coffeeroasters-subscription-site/",
+      "https://coffeeroasters-subscription-site-self.vercel.app/",
     codeLink:
       "https://github.com/SyedZawwarAhmed/coffeeroasters-subscription-site",
   },
