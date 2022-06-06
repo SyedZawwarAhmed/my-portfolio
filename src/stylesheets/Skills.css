@@ -32,6 +32,7 @@
   width: 8rem;  
   opacity: 0;
   transition: 0.6s all linear;
+  padding: 0.3rem;
 }
 
 .logo-container span {
@@ -58,7 +59,7 @@
   }
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 340px) {
   .logos {
     grid-template-columns: 1fr;
   }
