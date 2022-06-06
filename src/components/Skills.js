@@ -4,15 +4,19 @@ import htmlLogo from "../assets/images/logos/html-logo.png";
 import cssLogo from "../assets/images/logos/css-logo.png";
 import jsLogo from "../assets/images/logos/javascript-logo.png";
 import reactLogo from "../assets/images/logos/react-logo.png";
+import nodejsLogo from "../assets/images/logos/nodejs-logo.png";
+import expressjsLogo from "../assets/images/logos/expressjs-logo.png";
+import mongodbLogo from "../assets/images/logos/mongodb-logo.png";
+import tsLogo from "../assets/images/logos/typescript-logo.png";
 import "../stylesheets/Skills.css";
 
 function Skills() {
   const logos = document.getElementsByClassName("logo-container");
   const { ref, inView } = useInView({
     root: null,
-    rootMargin: "-200px 0px",
+    rootMargin: "-350px 0px",
     threshold: 0.2,
-    triggerOnce: true,
+    triggerOnce: true
   });
   const animation = () => {
     let i = 0;
@@ -22,7 +26,7 @@ function Skills() {
       if (i === logos.length) {
         clearInterval(interval);
       }
-    }, 250);
+    }, 75);
   };
   if (inView) {
     animation();
@@ -50,8 +54,24 @@ function Skills() {
           <span>JavaScript</span>
         </div>
         <div className="logo-container">
+          <img src={tsLogo} alt="" className="skill-logo" />
+          <span>TypeScript</span>
+        </div>  
+        <div className="logo-container">
           <img src={reactLogo} alt="" className="skill-logo" />
           <span>React</span>
+        </div>
+        <div className="logo-container">
+          <img src={nodejsLogo} alt="" className="skill-logo" />
+          <span>Nodejs</span>
+        </div>
+        <div className="logo-container">
+          <img src={expressjsLogo} alt="" className="skill-logo" />
+          <span>Expressjs</span>
+        </div>
+        <div className="logo-container">
+          <img src={mongodbLogo} alt="" className="skill-logo" />
+          <span>MongoDB</span>
         </div>
       </div>
     </div>

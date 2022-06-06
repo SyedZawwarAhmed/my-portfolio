@@ -7,7 +7,7 @@ function Home() {
       <div id="home" className="home">
         <div className="home-text">
           <h1 className="title">I am Zawwar Ahmed</h1>
-          <p className="role">Front-end Developer</p>
+          <p className="role">Web Developer</p>
           <a href="/My-Resume.pdf" className="resume" target="_blank">
             View Resume
           </a>

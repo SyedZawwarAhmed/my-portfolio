@@ -66,6 +66,7 @@ textarea {
   background-color: #1c1f1f;
   box-shadow: 0 0 3px 4px hsla(0, 0%, 0%, 0.025);
   border-bottom: 3px solid #1c1f1f;
+  border-radius: 5px;
   resize: none;
   transition: 0.3s ease;
 }
@@ -89,6 +90,7 @@ textarea:focus {
   color: var(--dark);
   background-color: var(--light-grey);
   border: none;
+  border-radius: 5px;
   outline: none;
   cursor: pointer;
   opacity: 0;

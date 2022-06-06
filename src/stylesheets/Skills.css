@@ -1,5 +1,6 @@
-.skills img {
-  height: 8rem;
+.skill-logo {
+  max-height: 100%;
+  width: 100%
 }
 
 .skills {
@@ -9,7 +10,7 @@
   justify-content: center;
   align-items: center;
   background: var(--dark);
-  padding: 4em 1em;
+  padding: 4em 0em;
   padding-bottom: 5em;
 }
 
@@ -27,7 +28,8 @@
 
 .logo-container {
   text-align: center;
-  
+  height: 8rem;
+  width: 8rem;  
   opacity: 0;
   transition: 0.6s all linear;
 }

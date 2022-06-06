@@ -1,6 +1,6 @@
 .portfolio-item {
   display: flex;
-  gap: 3rem;
+  gap: 3em;
 }
 
 .container {
@@ -14,10 +14,17 @@
 }
 
 .img-container {
+  /* width: min(30rem, 100%); */
   box-shadow: 0 0 3px 4px hsla(0, 0%, 0%, 0.157);
   opacity: 0;
   transform: translateX(-50%);
   transition: 0.4s all ease;
+  padding: 0.5em;
+}
+
+.project-img {
+  aspect-ratio: 16/9;
+  object-fit: cover;
 }
 
 .text-container {
@@ -31,10 +38,6 @@
   opacity: 1;
 }
 
-.project-img {
-  width: 100%;
-  aspect-ratio: 16/9;
-}
 
 .project-title {
   font-size: 1.8rem;
@@ -58,13 +61,13 @@
   font-weight: 600;
   text-decoration: none;
   padding: 0.4em 1.4em;
-  border: 3px solid var(--light-grey);
-  transition: 0.2s box-shadow ease;
-  
+  border: 2px solid var(--light-grey);
+  border-radius: 5px;
+  transition: 0.2s transform ease;
 }
 
 .site-links a:hover {
-  box-shadow: 0 0 3px 5px hsla(0, 0%, 0%, 0.308);
+  transform: scale(0.95);
 }
 
 .view-site {
