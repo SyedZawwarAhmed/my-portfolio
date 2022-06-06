@@ -35,8 +35,8 @@
   background-color: var(--dark);
   right: 0;
   left: 100%;
-  animation: hometext-animation 0.35s ease-in-out;
-  animation-delay: 0.3s;
+  animation: hometext-animation 0.4s ease-in-out;
+  animation-delay: 0.35s;
   animation-fill-mode: backwards;
 }
 
@@ -62,7 +62,7 @@
   border-radius: 6px;
   transition: 0.25s all ease-in-out;
   background-color: transparent;
-  animation: button-animation 0.3s;
+  animation: button-animation 0.35s;
   animation-delay: 1s;
   animation-timing-function: ease;
   animation-fill-mode: backwards;
@@ -80,7 +80,7 @@
   bottom: 0;
   left: 0;
   background-color: var(--light);
-  animation: sidebar-animation 0.3s ease;
+  animation: sidebar-animation 0.35s ease;
   animation-fill-mode: backwards;
 }
 
