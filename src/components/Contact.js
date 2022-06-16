@@ -58,7 +58,7 @@ function Contact() {
           <input
             type="hidden"
             name="_next"
-            value="http://localhost:3000/thanks.html"
+            value="https://zawwarahmed.netlify.app/thanks.html"
           />
           <input type="hidden" name="_captcha" value="false" />
           <button id="btn-submit" className="btn btn-submit" type="submit">
