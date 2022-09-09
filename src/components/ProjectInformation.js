@@ -5,8 +5,19 @@ import pricing from "../assets/images/screenshots/Pricing.png";
 import countries from "../assets/images/screenshots/Countries.png";
 
 export const PROJECTINFORMATION = [
-  {
+    {
     id: 0,
+    image: "blob:https://vercel.com/68d2bd16-feae-4ced-aff1-45c972c0b16e",
+    title: "Hotelnut Web App",
+    description:
+      "A Hotel Booking Web App built on the MERN stack.",
+    siteLink:
+      "https://hotelnut.vercel.app/",
+    codeLink:
+      "https://github.com/SyedZawwarAhmed/Hotel-Booking-Web-App",
+  },
+  {
+    id: 1,
     image: coffee,
     title: "Coffeeroasters Subscription Site",
     description:
@@ -17,7 +28,7 @@ export const PROJECTINFORMATION = [
       "https://github.com/SyedZawwarAhmed/coffeeroasters-subscription-site",
   },
   {
-    id: 1,
+    id: 2,
     image: countries,
     title: "Rest Countries API",
     description:
@@ -26,7 +37,7 @@ export const PROJECTINFORMATION = [
     codeLink: "https://github.com/SyedZawwarAhmed/Rest-Countries-API",
   },
   {
-    id: 2,
+    id: 3,
     image: jobListings,
     title: "Static Job Listings",
     description:
@@ -35,7 +46,7 @@ export const PROJECTINFORMATION = [
     codeLink: "https://github.com/SyedZawwarAhmed/static-job-listings",
   },
   {
-    id: 3,
+    id: 4,
     image: bank,
     title: "Easybank Landing Page",
     description:
@@ -44,7 +55,7 @@ export const PROJECTINFORMATION = [
     codeLink: "https://github.com/SyedZawwarAhmed/easybank-landing-page",
   },
   {
-    id: 4,
+    id: 5,
     image: pricing,
     title: "Interactive Pricing Component",
     description:
