@@ -7,7 +7,7 @@ import countries from "../assets/images/screenshots/Countries.png";
 export const PROJECTINFORMATION = [
     {
     id: 0,
-    image: "blob:https://vercel.com/68d2bd16-feae-4ced-aff1-45c972c0b16e",
+    image: "https://vercel.com/68d2bd16-feae-4ced-aff1-45c972c0b16e",
     title: "Hotelnut Web App",
     description:
       "A Hotel Booking Web App built on the MERN stack.",
