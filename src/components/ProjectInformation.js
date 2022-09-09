@@ -1,3 +1,4 @@
+import hotel from "../assets/images/screenshots/Hotel.png"
 import coffee from "../assets/images/screenshots/Coffee.png";
 import jobListings from "../assets/images/screenshots/JobListings.jpg";
 import bank from "../assets/images/screenshots/Easybank.png";
@@ -7,7 +8,7 @@ import countries from "../assets/images/screenshots/Countries.png";
 export const PROJECTINFORMATION = [
     {
     id: 0,
-    image: "https://vercel.com/68d2bd16-feae-4ced-aff1-45c972c0b16e",
+    image: hotel,
     title: "Hotelnut Web App",
     description:
       "A Hotel Booking Web App built on the MERN stack.",
