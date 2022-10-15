@@ -29,9 +29,9 @@ function Contact() {
     <>
       <div ref={ref} id="contact" className="contact">
         <h1
-          className={
+          className={`section-title ${
             inView ? "contact-title contact-title-animation" : "contact-title"
-          }
+          }`}
         >
           Leave a message
         </h1>
