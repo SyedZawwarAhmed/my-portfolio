@@ -41,3 +41,7 @@ a {
 ul {
   list-style: none;
 }
+
+.section-title {
+  font-size: clamp(3rem, calc(6vw), 5rem);
+}
