@@ -16,7 +16,6 @@
 }
 
 .about-title {
-  font-size: clamp(3rem, calc(7vw), 6rem);
   margin-bottom: 0.5em;
   opacity: 0;
   transition: 0.6s all ease;
