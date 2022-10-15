@@ -15,7 +15,6 @@
 }
 
 .skills-title {
-  font-size: clamp(3rem, calc(5vw), 6rem);
   margin-bottom: 0.8em;
   color: var(--light);
   opacity: 0;
