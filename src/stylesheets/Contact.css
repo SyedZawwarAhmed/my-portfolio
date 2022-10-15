@@ -9,7 +9,6 @@
 }
 
 .contact-title {
-  font-size: clamp(3rem, calc(7vw), 6rem);
   text-align: center;
   color: var(--light-grey);
   margin-bottom: 0.5em;
