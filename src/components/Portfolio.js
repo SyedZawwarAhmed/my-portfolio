@@ -27,11 +27,11 @@ function Portfolio() {
     <>
       <div id="portfolio" className="portfolio">
         <h1  ref={ref}
-          className={
+          className={`section-title ${
             inView
               ? "portfolio-title portfolio-title-animation"
               : "portfolio-title"
-          }
+          }`}
         >
           Projects I've made
         </h1>
