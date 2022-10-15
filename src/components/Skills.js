@@ -34,9 +34,9 @@ function Skills() {
   return (
     <div ref={ref} className="skills">
       <h1
-        className={
+        className={`section-title ${
           inView ? "skills-title skills-title-animation" : "skills-title"
-        }
+        }`}
       >
         My skills
       </h1>
