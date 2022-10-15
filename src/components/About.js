@@ -15,7 +15,7 @@ function About() {
       <div id="about" className="about">
         <div ref={ref} className="about-text">
           <h1
-            className={inView ? "about-title title-animation" : "about-title"}
+            className={`section-title ${inView ? "about-title title-animation" : "about-title"}`}
           >
             About me
           </h1>
