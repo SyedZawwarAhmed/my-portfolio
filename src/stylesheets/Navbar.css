@@ -6,7 +6,7 @@
   top: 0;
   right: 0;
   left: 0;
-  padding: 3em clamp(3.5rem, calc(8vw), 7rem);
+  padding: 2.35em clamp(3.5rem, calc(8vw), 7rem);
   background-color: var(--dark);
   z-index: 3;
 }
