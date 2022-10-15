@@ -10,7 +10,6 @@
 
 .portfolio-title {
   color: var(--light);
-  font-size: clamp(3rem, calc(7vw), 6rem);
   text-align: center;
   opacity: 0;
   margin-bottom: 1em;
