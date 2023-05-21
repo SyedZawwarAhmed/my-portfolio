@@ -31,7 +31,7 @@ export const PROJECTINFORMATION = [
   {
     id: 2,
     image: countries,
-    title: "Rest Countries API",
+    title: "Countries of the World",
     description:
       "This application displays information about all the countries of the world by integrating with a REST API.",
     siteLink: "https://syedzawwarahmed.github.io/Rest-Countries-API/",
