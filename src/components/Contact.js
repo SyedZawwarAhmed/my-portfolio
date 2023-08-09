@@ -41,19 +41,19 @@ function Contact() {
         >
           <div className="name input-field">
             <label htmlFor="name">Name</label>
-            <input type="text" name="name" />
+            <input type="text" name="name" required />
           </div>
           <div className="email input-field">
             <label htmlFor="Email">Email</label>
-            <input type="email" name="email" />
+            <input type="email" name="email" required />
           </div>
           <div className="subject input-field">
             <label htmlFor="Subject">Subject</label>
-            <input type="text" name="subject" />
+            <input type="text" name="subject" required />
           </div>
           <div className="message input-field">
             <label htmlFor="message">Your Message</label>
-            <textarea name="message" id="message" rows="5"></textarea>
+            <textarea name="message" id="message" rows="5" required></textarea>
           </div>
           <input
             type="hidden"
