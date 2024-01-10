@@ -35,7 +35,7 @@ export const PROJECTINFORMATION = [
     description:
       "This application displays information about all the countries of the world by integrating with a REST API.",
     siteLink: "https://syedzawwarahmed.github.io/Countries-of-the-World/",
-    codeLink: "https://syedzawwarahmed.github.io/Countries-of-the-World/",
+    codeLink: "https://github.com/SyedZawwarAhmed/Countries-of-the-World",
   },
   {
     id: 3,
