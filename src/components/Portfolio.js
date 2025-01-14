@@ -1,19 +1,18 @@
 import React from "react";
 import PortfolioItem from "./PortfolioItem";
-import { PROJECTINFORMATION } from "./ProjectInformation";
 import "../stylesheets/Portfolio.css";
 import { useInView } from "react-intersection-observer";
+import { PROJECT_INFORMATION } from "../constants/ProjectInformation";
 
 function Portfolio() {
   const { ref, inView } = useInView({
     root: null,
     rootMargin: "-200px 0px",
     threshold: 0,
-    triggerOnce: true
+    triggerOnce: true,
   });
-  const projectInformation = PROJECTINFORMATION;
 
-  const portfolioItems = projectInformation.map((item) => (
+  const portfolioItems = PROJECT_INFORMATION.map((item) => (
     <PortfolioItem
       key={item.id}
       img={item.image}
@@ -26,7 +25,8 @@ function Portfolio() {
   return (
     <>
       <div id="portfolio" className="portfolio">
-        <h1  ref={ref}
+        <h1
+          ref={ref}
           className={`section-title ${
             inView
               ? "portfolio-title portfolio-title-animation"

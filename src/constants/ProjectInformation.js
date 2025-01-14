@@ -5,7 +5,7 @@ import bank from "../assets/images/screenshots/Easybank.png";
 import pricing from "../assets/images/screenshots/Pricing.png";
 import countries from "../assets/images/screenshots/Countries.png";
 
-export const PROJECTINFORMATION = [
+export const PROJECT_INFORMATION = [
   {
     id: 0,
     image: hotel,
